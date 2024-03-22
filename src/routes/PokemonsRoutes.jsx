@@ -1,14 +1,13 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Pokemons from "../pages/Pokemons";
 import PokemonDetails from "../pages/PokemonDetails";
 
-const PokemonsRoutes = () => {
-  return (
-    <Routes>
-      <Route path="/" element={<Pokemons />} />
-      <Route path=":pokemon" element={<PokemonDetails />} />
-    </Routes>
-  );
-};
+const PokemonsRoutes = () => (
+  <Routes>
+    <Route path="/" element={<Pokemons />} />
+    <Route path=":pokemon" element={<PokemonDetails />} />
+    <Route path="*" element={<Navigate to="/pokemons" />} />
+  </Routes>
+);
 
 export default PokemonsRoutes;

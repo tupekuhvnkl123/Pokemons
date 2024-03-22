@@ -8,6 +8,7 @@
     width: 100%;
     min-height: 100dvh;
     padding-bottom: 50px;
+    overflow: hidden;
     @apply bg-background_color;
   }
 }
@@ -16,4 +17,10 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Aldrich", sans-serif;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  transform: scale(0.6);
+  color: black !important;
 }

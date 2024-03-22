@@ -12,6 +12,8 @@ module.exports = {
         primary_color: "#2F2F2F",
         secondary_color: "#E4E4E4",
         background_color: "#DDDDDD",
+        pokemon_red: "#C12026",
+        pokemon_blue: "#1976d2",
       },
       gridTemplateColumns: {
         auto: "repeat(auto-fill, minmax(200px, 1fr))",
