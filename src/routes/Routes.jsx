@@ -3,8 +3,8 @@ import PokemonsRoutes from "./PokemonsRoutes";
 
 const AppRoutes = () => (
   <Routes>
-    <Route path="/pokemons/*" element={<PokemonsRoutes />} />
-    <Route path="*" element={<Navigate to="/pokemons" />} />
+    <Route path="/*" element={<PokemonsRoutes />} />
+    <Route path="*" element={<Navigate to="/" />} />
   </Routes>
 );
 

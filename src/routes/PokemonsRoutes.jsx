@@ -6,7 +6,7 @@ const PokemonsRoutes = () => (
   <Routes>
     <Route path="/" element={<Pokemons />} />
     <Route path=":pokemon" element={<PokemonDetails />} />
-    <Route path="*" element={<Navigate to="/pokemons" />} />
+    <Route path="*" element={<Navigate to="/" />} />
   </Routes>
 );
 
