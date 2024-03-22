@@ -23,7 +23,7 @@ const Preview = ({ id, name, image, types, gif, extraImages }) => (
         </div>
       ))}
     </div>
-    <div className="relative flex items-center justify-center">
+    <div className="relative flexCenter">
       <img
         className="z-10 relative object-cover h-[200px] object-center mt-5 overflow-visible"
         src={gif}

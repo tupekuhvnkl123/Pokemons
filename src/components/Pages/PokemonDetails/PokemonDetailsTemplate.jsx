@@ -32,7 +32,7 @@ const PokemonDetailsTemplate = ({ data, isLoading }) => {
         </button>
       </div>
       {isLoading && (
-        <div className="flex items-center justify-center pt-40">
+        <div className="flexCenter pt-40">
           <PokemonLoader />
         </div>
       )}

@@ -4,9 +4,9 @@ const searchOptions = ["Name", "Type", "Id"];
 
 const Search = ({ setSearchBy, searchBy, searchValue, setSearchValue }) => (
   <div className="w-full h-[200px] flex items-center justify-between px-20 xl:px-10 phone:flex-col phone:justify-center phone:gap-y-10 phone:!px-0 ">
-    <div className="flex items-center justify-center font-bold gap-x-5">
+    <div className="flexCenter font-bold gap-x-5">
       <p className="text-[20px] smPhone:text-[16px]">Search by : </p>
-      <div className="flex items-center justify-center gap-x-3 smPhone:gap-x-0">
+      <div className="flexCenter gap-x-3 smPhone:gap-x-0">
         {searchOptions.map((term) => {
           const isActive = searchBy === term.toLocaleLowerCase();
           return (
@@ -23,7 +23,7 @@ const Search = ({ setSearchBy, searchBy, searchValue, setSearchValue }) => (
         })}
       </div>
     </div>
-    <div className="flex items-center justify-center">
+    <div className="flexCenter">
       <input
         onChange={(e) => setSearchValue(e.target.value)}
         value={searchValue}

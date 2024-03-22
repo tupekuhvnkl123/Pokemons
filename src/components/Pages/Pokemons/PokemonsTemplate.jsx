@@ -53,7 +53,7 @@ const PokemonsTemplate = ({
       <PokemonsList data={filteredData} isLoading={isLoading} />
 
       {hasNextPage && !isSearching && (
-        <div className="w-full flex item-center justify-center">
+        <div className="w-full flexCenter">
           <button
             className=" bg-primary_color text-white py-2 px-4 rounded-lg hover:scale-105 transition"
             onClick={fetchNextPage}

@@ -9,7 +9,7 @@ const PokemonsList = ({ isLoading, data }) => {
 
   if (emptyData) {
     return (
-      <div className="flex items-center justify-center">
+      <div className="flexCenter">
         <p className="bg-secondary_color py-5 px-10 rounded-md">
           No pokemons found...
         </p>

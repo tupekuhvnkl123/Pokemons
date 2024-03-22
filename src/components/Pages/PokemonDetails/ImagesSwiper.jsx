@@ -6,7 +6,7 @@ import "swiper/css/navigation";
 
 const ImagesSwiper = ({ imgaes }) => {
   return (
-    <div className="h-full flex items-center justify-center w-full">
+    <div className="h-full flexCenter w-full">
       <Swiper
         modules={[Navigation]}
         slidesPerView={1}
@@ -14,10 +14,7 @@ const ImagesSwiper = ({ imgaes }) => {
         className=" h-full"
       >
         {imgaes.map((img, index) => (
-          <SwiperSlide
-            className="flex items-center justify-center "
-            key={index}
-          >
+          <SwiperSlide className="flexCenter" key={index}>
             <img
               className="object-cover object-center h-[100px] select-none"
               src={img}

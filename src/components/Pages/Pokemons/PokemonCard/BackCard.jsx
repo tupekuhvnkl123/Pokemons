@@ -11,7 +11,7 @@ const BackCard = ({ gif, name, stats }) => {
   return (
     <div className="z-20 absolute my-rotate-y-180 backface-hidden w-full h-full overflow-hidden flex flex-col items-center justify-end gap-y-3 pb-4">
       <img className="max-h-[100px]" src={gif} alt={name} />
-      <div className="flex flex-col items-center text-center justify-center">
+      <div className="flexCenter flex-col  text-center ">
         {stats.map((stat) => (
           <p className="text-sm" key={stat.name}>
             {stat.name} : {stat.value}

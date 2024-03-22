@@ -11,6 +11,11 @@
     overflow: hidden;
     @apply bg-background_color;
   }
+  .flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 * {
   padding: 0;
