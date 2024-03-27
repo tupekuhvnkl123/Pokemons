@@ -18,29 +18,6 @@ const PokemonsTemplate = ({
 
   const filteredData = filterData(data, searchValue, searchBy);
 
-  // const filteredData = data?.pages.map((page) =>
-  //   page.filter((data) => {
-  //     if (searchBy === "id") {
-  //       if (data.id.toString() === searchValue) {
-  //         return data;
-  //       }
-  //     }
-  //     if (searchBy === "name") {
-  //       if (data.name.includes(searchValue)) {
-  //         return data;
-  //       }
-  //     }
-  //     if (searchBy === "type") {
-  //       if (data.types.includes(searchValue)) {
-  //         return data;
-  //       }
-  //     }
-  //     if (!isSearching) {
-  //       return data;
-  //     }
-  //   })
-  // );
-
   return (
     <main className="pageContainer">
       <Preview />
